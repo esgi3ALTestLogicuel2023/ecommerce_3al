@@ -13,7 +13,7 @@ export class Cart {
   items: Item[];
 
   @Prop()
-  totalPrice: number; 
+  totalPrice: number;
 }
 
 export const CartSchema = SchemaFactory.createForClass(Cart);

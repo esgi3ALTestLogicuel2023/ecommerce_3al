@@ -7,21 +7,26 @@ import { FilterProductDTO } from './dtos/filter-product.dto';
 
 @Injectable()
 export class ProductService {
-  constructor(@InjectModel('Product') private readonly productModel: Model<ProductDocument>) { }
+  constructor(
+    @InjectModel('Product')
+    private readonly productModel: Model<ProductDocument>,
+  ) {}
 
-  async getFilteredProducts(filterProductDTO: FilterProductDTO): Promise<Product[]> {
+  async getFilteredProducts(
+    filterProductDTO: FilterProductDTO,
+  ): Promise<Product[]> {
     const { category, search } = filterProductDTO;
     let products = await this.getAllProducts();
 
     if (search) {
-      products = products.filter(product => 
-        product.name.includes(search) ||
-        product.description.includes(search)
+      products = products.filter(
+        (product) =>
+          product.name.includes(search) || product.description.includes(search),
       );
     }
 
     if (category) {
-      products = products.filter(product => product.category === category)
+      products = products.filter((product) => product.category === category);
     }
 
     return products;
@@ -42,9 +47,15 @@ export class ProductService {
     return newProduct.save();
   }
 
-  async updateProduct(id: string, createProductDTO: CreateProductDTO): Promise<Product> {
-    const updatedProduct = await this.productModel
-      .findByIdAndUpdate(id, createProductDTO, { new: true });
+  async updateProduct(
+    id: string,
+    createProductDTO: CreateProductDTO,
+  ): Promise<Product> {
+    const updatedProduct = await this.productModel.findByIdAndUpdate(
+      id,
+      createProductDTO,
+      { new: true },
+    );
     return updatedProduct;
   }
 

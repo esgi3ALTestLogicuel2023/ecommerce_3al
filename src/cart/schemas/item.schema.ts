@@ -18,7 +18,7 @@ export class Item {
   price: number;
 
   @Prop()
-  subTotalPrice: number; 
+  subTotalPrice: number;
 }
 
 export const ItemSchema = SchemaFactory.createForClass(Item);
