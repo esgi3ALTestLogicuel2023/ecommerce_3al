@@ -1,0 +1,65 @@
+[
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b1"
+    },
+    "name": "paper",
+    "description": "A piece of paper",
+    "price": 2,
+    "category": "home"
+  },
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b2"
+    },
+    "name": "Bag",
+    "description": "Random bag",
+    "price": 10,
+    "category": "home"
+  },
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b3"
+    },
+    "name": "Shoes",
+    "description": "My beautiful shoes",
+    "price": 4,
+    "category": "fashion"
+  },
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b4"
+    },
+    "name": "Glasses",
+    "description": "Drink and chill",
+    "price": 20,
+    "category": "kitchen"
+  },
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b5"
+    },
+    "name": "Knife",
+    "description": "My Knife",
+    "price": 12,
+    "category": "kitchen"
+  },
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b6"
+    },
+    "name": "Harry Potter",
+    "description": "Geek and book lover",
+    "price": 15,
+    "category": "library"
+  },
+  {
+    "_id": {
+      "$oid": "647af9d8ec40187c9468d7b7"
+    },
+    "name": "Clean code",
+    "description": "My favourite book",
+    "price": 20,
+    "category": "library"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "_id": {
+      "$oid": "647aef8707c6188a6a2a5615"
+    },
+    "username": "loic",
+    "email": "my@email.com",
+    "password": "pass"
+  },
+  {
+    "_id": {
+      "$oid": "647aef8707c6188a6a2a5616"
+    },
+    "username": "Price",
+    "email": "price@email.com",
+    "password": "passprice"
+  },
+  {
+    "_id": {
+      "$oid": "647aef8707c6188a6a2a5617"
+    },
+    "username": "flint",
+    "email": "flint@email.com",
+    "password": "passflint"
+  }
+]

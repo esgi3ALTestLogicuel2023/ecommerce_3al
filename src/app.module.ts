@@ -9,7 +9,7 @@ import { CartModule } from './cart/cart.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/store'), // 1.2 Setup the database
+    MongooseModule.forRoot('mongodb://0.0.0.0:27017/ecom'), // 1.2 Setup the database
     ProductModule,
     UserModule,
     AuthModule,
