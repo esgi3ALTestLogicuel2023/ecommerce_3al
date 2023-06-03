@@ -23,8 +23,23 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
+Ce projet a été réalisé sur la base de ce [tutoriel](https://blog.logrocket.com/how-build-ecommerce-app-nestjs/). Il s'agit d'une API de site de ecomm. Voici quelques règles métier que l'application doit respecter:
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+* Un utilisateur peux ajouter des produits au panier,
+* Un utilisateur doit être authentifier pour pouvoir accéder au panier,
+* Un utilisateur doit avoir le rôle "user" pour pouvoir effectuer des actions sur le panier,
+* Un panier utilisateur est automatiquement recalculer quand un utilisateur ajoute un produit.
+
+## Consigne
+
+Vous avez la liberté d'utiliser les outils que vous souhaitez. Vous utiliserez le type de test que vous trouverez nécessaire.
+
+La restitution de votre travail devra se faire à travers une soutenance. Il faudra:
+
+* Décrire votre procédure de tests et la stratégies que vous avez souhaité appliqués,
+* Un contenu (Pull Request) des tests que vous avez réalisé,
+* Démonstration de vos propos
+
 
 ## Installation
 
@@ -35,6 +50,7 @@ $ npm install
 ## Running the app
 
 ```bash
+$ docker-compose up #pour démarrer la base de donner
 # development
 $ npm run start
 
@@ -44,7 +60,6 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
-
 ## Test
 
 ```bash
@@ -57,7 +72,7 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
+**NOTE**: Une fois l'application démarrée (et la BDD aussi), vous pouvez utiliser [mongodb-vscode](https://www.mongodb.com/docs/mongodb-vscode/playgrounds/) pour jouer les fichiers *-playgrounds.mongodb.js et ajouter des données à votre base de données.
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).

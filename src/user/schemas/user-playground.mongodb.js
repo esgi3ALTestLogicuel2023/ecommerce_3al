@@ -6,19 +6,22 @@ use('ecom');
 
 // Create a new document in the collection.
 db.getCollection('users').insertMany([
-    {
-        username: "loic",
-        email: "my@email.com",
-        password: "pass"
-    },
-    {
-        username: "Price",
-        email: "price@email.com",
-        password: "passprice"
-    },
-    {
-        username: "flint",
-        email: "flint@email.com",
-        password: "passflint"
-    }
+  {
+    username: 'loic',
+    email: 'my@email.com',
+    password: 'pass',
+    role: ['admin', 'user'],
+  },
+  {
+    username: 'Price',
+    email: 'price@email.com',
+    password: 'passprice',
+    role: ['user'],
+  },
+  {
+    username: 'flint',
+    email: 'flint@email.com',
+    password: 'passflint',
+    role: ['user'],
+  },
 ]);
